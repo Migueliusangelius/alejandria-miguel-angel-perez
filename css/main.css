@@ -1,0 +1,300 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*first mobile 412px*/
+
+
+
+/*estilo de header*/
+
+h1{
+    text-align: center;
+    font-style: oblique;
+    
+}
+
+header{
+    background-image: linear-gradient(rgb(168, 190, 168),rgb(133, 165, 165));
+    padding-bottom: 2rem;
+    
+}
+
+main{
+    font-style: oblique;
+
+    
+}
+
+
+body{
+    background-image: linear-gradient(rgb(221, 188, 221),rgb(175, 202, 202));
+}
+
+
+
+
+/*estilo del menu*/
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    
+
+}
+
+
+nav ul li{
+    
+    background-color: khaki;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    font-style: oblique;
+    font-size: rem;
+    
+}
+
+
+
+/*estilos de main*/
+
+
+
+.mainNosotros{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainP mainP"
+                        "imagen1 imagen2"
+                        "imagen3 imagen4"
+                        "parrafo parrafo";
+
+    justify-content: center;
+    justify-items: center;
+    
+
+                       
+
+}
+
+.sectionNosotros{
+    display: none;
+}
+
+
+.mainP{
+    grid-area: mainP;
+    
+    
+}
+
+.imagen1{
+
+grid-area: imagen1;
+
+}
+
+.imagen2{
+grid-area: imagen2;
+
+}
+
+.imagen3{
+
+grid-area: imagen3;
+
+}
+
+.imagen4{
+grid-area: imagen4;
+}
+
+.parrafo{
+    grid-area: parrafo;
+    
+    
+}
+
+.girar{
+    animation-name: librosGiran;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes librosGiran{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg)
+    }
+}
+
+
+/*propiedades del footer*/
+
+body footer{
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    
+    
+}
+
+footer{
+    display: flex;
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    
+    
+    
+    
+}
+
+footer p{
+    text-align: center;
+    
+
+    } 
+
+
+
+
+
+
+
+
+/*media querie 1024px*/
+
+@media screen and (min-width:1024px) {
+    .sectionNosotros{
+        height: vh;
+        display: block;
+        grid-area: pSec;
+        padding: 50px
+    }
+
+
+
+
+.mainNosotros{
+    margin: 50px;
+    display: grid;
+    grid-template-areas: "mainP mainP mainP mainP"
+                        "pSec pSec pSec pSec"
+                        "imagen1 imagen2 imagen3 imagen4"
+                        "parrafo parrafo parrafo parrafo";
+                        column-gap: 7rem;
+                        padding: 3%;
+                    
+                        }
+
+
+}
+
+
+/*html hitoria*/
+
+/*version mobile 412px*/
+
+
+    
+
+.pDos{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+.mainDos{
+    
+    display: grid;
+
+    justify-content: center;
+    grid-template-areas: "pDos"
+                        "libroH1"
+                        "libroH2"
+                        "libroH3"
+                        "libroH4"
+                        "libroH5"
+                        "libroH6"
+                        "libroH7"
+                        "libroH8"
+                        "libroH9"
+                        ;
+    justify-items: center;   
+    
+}
+
+
+.mainDos{
+    grid-area: mainDos;
+
+}
+
+.pDos{
+    grid-area: pDos;
+}
+
+.libroH1{
+    grid-area: libroH1;
+
+}
+
+.libroH2{
+    grid-area: libroH2;
+}
+.libroH3{
+    grid-area: libroH3;
+}
+.libroH{
+    grid-area: libroH4;
+}
+.libroH5{
+    grid-area: libroH5;
+}
+.libroH6{
+    grid-area: libroH6;
+}
+.libroH7{
+    grid-area: libroH7;
+}
+.libroH8{
+    grid-area: libroH8;
+}
+.libroH9{
+    grid-area: libroH9;
+}
+
+
+
+
+@media screen and (min-width: 1200px)
+{
+ 
+    .mainDos{
+        
+        display: grid;
+         justify-content: center;
+        grid-template-areas:     "pDos pDos pDos"
+                            "libroH1 libroH2 libroH3"
+                            "libroH4 libroH5 libroH6"
+                            "libroH7 libroH8 libroH9";
+        justify-items: center;   
+        row-gap: 10rem;
+
+
+}
+
+}
+
